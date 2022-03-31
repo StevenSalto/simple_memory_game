@@ -48,7 +48,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
-   I refrenced the pre-work guide and w3schools.com for help with syntax (I've been working with python and c++ lately so my webdev skills are a little rusty).
+   I refrenced the pre-work guide and websites such as W3shcools.com and stackoverflow.com
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
    I found the ticking clock difficult, specifically getting the timer to start after the pattern finished flashing.
    I overcame this issue by first better understanding the function setTimeout and asynch vs synch programming by reading online articles(w3schools).
@@ -57,10 +57,9 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
    How is website loading speed improved? How does the server-host model work? What are cookies? How do I center a div?? How can I better use asynch and synch programming to be a better webdeveloper? How do these techniques work on a dealer, more technical level?
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
-   I would most likely focus on adding more features. I believe a fun option would be to do a solely sound-based memory game, so basically removing the colors. I'd also added images to my buttons instead of colors and would let the user customize how they want to play the game
-   via a starting screen that let them select if they wanted simple tones, songs, images, colors, etc. I definetly could see myself spending a lot of time here as I find it fun to get creative.
-   Finally, I'd work on refactoring code as it would be essential to optimal running speeds and a fun challenge.
-
+   I'd would most likely spend any extra time adding features to the game because it's what I found most fun. Some ideas I might want to implement are a sound-only mode where the button colors are removed 
+   and maybe a shuffling feature that moves the buttons around but the pattern array stays the same. However, I would not discount refactoring code
+   if I'm done implementing minor features such as positioning and font fixes/changes.
 ## Interview Recording URL Link
 
 [My 5-minute Interview Recording] 
