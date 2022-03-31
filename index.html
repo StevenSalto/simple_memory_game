@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <title>Memory Game!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -13,24 +15,26 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body onload="introAnimation()">
     <!-- this is the start of content -->
-    <h1>Memory Game!</h1>
+    <h1 id="title" style="font-size:10vw;margin-top:20vh;">MEMORY GAME</h1>
+    <div id="game" class="hidden">
     <p>
       Welcome to the game. Repeat back the pattern to win the game!
     </p>
-    <button id="startBtn" onclick="startGame()">Start</button>
-    <button id="stopBtn" class="hidden" onclick="stopGame()">End</button>
-    <p id="clock">
+    <p id="clock" style="border-style:solid; text-align:center; font-size:5vw">
       CLOCK HERE, DON'T LET ME REACH ZERO
     </p>
+    <button id="startBtn" onclick="startGame()" >Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">End</button>
     <div id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
-      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
-      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1); toggleImageVisibility(1, true)" onmouseup="stopTone(); toggleImageVisibility(1, false)"><img class="hidden buttonImages" id="img1" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/ven_spr.png?1648708162657"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2); toggleImageVisibility(2, true)" onmouseup="stopTone(); toggleImageVisibility(2, false)"><img class="hidden buttonImages" id="img2" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/gyarados_spr.png?1648707464521"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3); toggleImageVisibility(3, true)" onmouseup="stopTone(); toggleImageVisibility(3, false)"><img class="hidden buttonImages" id="img3" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/gr_sprt.png?1648708143605"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4); toggleImageVisibility(4, true)" onmouseup="stopTone(); toggleImageVisibility(4, false)"><img class="hidden buttonImages" id="img4" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/jolt_spr.png?1648708125451"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5); toggleImageVisibility(5, true)" onmouseup="stopTone(); toggleImageVisibility(5, false)"><img class="hidden buttonImages" id="img5" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/char_spr.png?1648708108847"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6); toggleImageVisibility(6, true)" onmouseup="stopTone(); toggleImageVisibility(6, false)"><img class="hidden buttonImages" id="img6" src="https://cdn.glitch.global/aeac2d73-4f99-4f1c-bab8-c979a1fae01d/gengar_sprite.png?1648706270704"></button>
+    </div>
     </div>
   </body>
 </html>

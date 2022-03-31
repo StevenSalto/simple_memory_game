@@ -27,16 +27,23 @@ video {
 }
 
 h1 {
-  font-family: verdana, arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
 }
 
 button {
   padding: 10px;
   border-radius: 10px;
 }
-
+p {
+  font-family: 'Roboto Mono', monospace;
+}
 .hidden {
   display: none;
+}
+.buttonImages {
+  user-select: none;
+  pointer-events: none;
 }
 #gameButtonArea > button {
   width:200px;

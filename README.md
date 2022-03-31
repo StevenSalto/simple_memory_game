@@ -4,7 +4,7 @@
 
 Submitted by: **Steven Salto**
 
-Time spent: **10** hours spent in total
+Time spent: **15** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/codepath-site-pre-work---memory-game?path=index.html%3A1%3A0
 
