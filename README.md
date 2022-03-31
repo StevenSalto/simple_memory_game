@@ -4,7 +4,7 @@
 
 Submitted by: **Steven Salto**
 
-Time spent: **15** hours spent in total
+Time spent: **18** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/codepath-site-pre-work---memory-game?path=index.html%3A1%3A0
 
@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 - [x] Playback speeds up on each turn
 - [x] Computer picks a different pattern each time the game is played
 - [x] Player only loses after 3 mistakes (instead of on the first mistake)
-- [ ] Game button appearance change goes beyond color (e.g. add an image)
+- [x] Game button appearance change goes beyond color (e.g. add an image)
 - [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 - [x] User has a limited amount of time to enter their guess on each turn
 
@@ -43,6 +43,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](https://media.giphy.com/media/o9Do4S48KIchBYz28b/giphy.gif)
 ![](https://media.giphy.com/media/CPCUHmE4h9cGnXihUE/giphy.gif)
 ![](https://media.giphy.com/media/V3HzlJ946tknG9Vh3Z/giphy.gif)
+![](https://media.giphy.com/media/xOWzO6FiDEGA2z8NXE/giphy.gif)
 
 ## Reflection Questions
 
