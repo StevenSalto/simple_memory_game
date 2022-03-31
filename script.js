@@ -14,6 +14,18 @@ var guessCounter = 0;
 var strikes = 0;
 var timer = 10;
 var clock;
+
+function introAnimation(){
+  document.getElementById("game").classList.add("hidden");
+  var title = document.getElementById("title");
+  title.style.transitionDelay = "1s";
+  title.style.marginTop = "0vh";
+  title.style.fontSize = "5vw"
+  title.style.transitionDuration = "3s";
+  
+  setTimeout(function(){document.getElementById("game").classList.remove("hidden")}, 4000);
+}
+
 function startGame(){
   //initialize game variables
   clearInterval(clock);
@@ -85,10 +97,10 @@ o.connect(g)
 o.start(0)
 
 function lightButton(btn){
-  document.getElementById("button"+btn).classList.add("lit")
+  document.getElementById("button"+btn).classList.add("lit");
 }
 function clearButton(btn){
-  document.getElementById("button"+btn).classList.remove("lit")
+  document.getElementById("button"+btn).classList.remove("lit");
 }
 
 function playSingleClue(btn){
@@ -155,5 +167,13 @@ function guess(btn){
       playClueSequence();
       clueHoldTime+=120;
     }
+  }
+}
+
+function toggleImageVisibility(btn, bool) {
+  if(bool) {
+    document.getElementById("img"+btn).classList.remove("hidden");
+  } else {
+    document.getElementById("img"+btn).classList.add("hidden");
   }
 }
